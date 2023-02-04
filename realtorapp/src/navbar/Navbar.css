@@ -1,6 +1,6 @@
 /* Nav */
 
-nav {
+.navContainer {
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -13,6 +13,17 @@ nav {
   z-index: 10;
 }
 
+.hamburgerDiv {
+  margin-left: 250px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.btnBurger {
+  display: none;
+}
 .btn {
   font-family: 'Source Sans Pro', sans-serif;
   font: 10px;
@@ -42,5 +53,102 @@ nav {
 .logo {
   width: 30px;
   height: 30px;
-  margin-top: 5px;
+  margin: 5px 0 0 90px;
+}
+
+@media screen and (max-width: 750px) {
+  .btn {
+    display: none;
+  }
+
+  .hamburger {
+    background-color: black;
+    position: relative;
+    display: block;
+    width: 45px;
+    margin: 0px 115px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger .bar {
+    background-color: red;
+  }
+  .hamburger::after {
+    background-color: yellow;
+  }
+  .hamburger::before {
+    background-color: blue;
+  }
+
+  .hamburger .bar,
+  .hamburger::after,
+  .hamburger::before {
+    border-radius: 10px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 6px;
+    /* background-color: #fff; */
+    margin: 5px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+    background-color: white;
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+    background-color: white;
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .btnBurger {
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .btnBurger.is-hidden {
+    display: none;
+  }
+
+  .btnBurger--1 {
+    border: none;
+    color: white;
+    background-color: black;
+    width: 250px;
+    height: 40px;
+    box-shadow: inset 0 0 0 0 lightgray;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .btnBurger--1:hover {
+    cursor: pointer;
+    color: darkgray;
+    /* box-shadow: inset 300px 0 0 0 #f9e506; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    margin: 5px 10px 0 138px;
+  }
+  .hamburgerDiv {
+    margin-left: 75px;
+  }
 }
