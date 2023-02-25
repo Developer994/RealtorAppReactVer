@@ -18,15 +18,16 @@ function Navbar() {
   return (
     <>
       <nav className='navContainer'>
+        {/* <h3>The Realtor App</h3> */}
         <div>
           <img className='logo' alt='logo' src={require('./home-icon.jpg')} />
         </div>
         <div className='btns'>
-          <button className='btn btn--1'>Sales</button>
+          <button className='btn btn--1'>Buy</button>
 
-          <button className='btn btn--1'>Condos</button>
+          <button className='btn btn--1'>Sell</button>
 
-          <button className='btn btn--1'>Houses</button>
+          <button className='btn btn--1'>About</button>
 
           <button className='btn btn--1'>Contact</button>
           <div className='hamburgerDiv'>
@@ -36,9 +37,9 @@ function Navbar() {
               <div className='bar'></div>
             </button>
             <nav onClick={hamburgerHandler} className={burgBtns}>
-              <button className='btnBurger btnBurger--1'>Contact</button>
-              <button className='btnBurger btnBurger--1'>Sales</button>
-              <button className='btnBurger btnBurger--1'>Condos</button>
+              <button className='btnBurger btnBurger--1'>Buy</button>
+              <button className='btnBurger btnBurger--1'>Sell</button>
+              <button className='btnBurger btnBurger--1'>About</button>
               <button className='btnBurger btnBurger--1'>Houses</button>
             </nav>
           </div>

@@ -1,21 +1,7 @@
 /* Welcome box */
-
-.introContainer {
-  /* position: fixed; */
-  background-image: url(./background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 90rem;
-  height: 50rem;
-  overflow: auto;
-}
-
 .wlcmBox {
-  height: 600px;
-  position: relative;
   display: flex;
   flex-direction: row-reverse;
-  width: 100%;
 }
 
 .profilePic {
@@ -23,7 +9,7 @@
   background-size: cover; */
   height: 225px;
   width: 250px;
-  margin: 210px 600px 0 0;
+  margin: 50px 35% 0 0;
   border-radius: 50px;
 }
 
@@ -31,107 +17,16 @@
   text-align: center;
   background-color: black;
   color: white;
-  margin-top: 112px;
-  padding: 48px 30px 0px 30px;
+  margin-top: 50px;
+  padding: 0 30px 0px 30px;
   width: 500px;
-  height: 330px;
+  height: 200px;
   border-radius: 25px 0 0 25px;
-  opacity: 80%;
+  opacity: 70%;
   font-family: 'Inter', sans-serif;
   font-family: 'PT Serif', serif;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-style: italic;
   /* resize: both; */
-}
-
-@media screen and (max-width: 1270px) {
-  .introContainer {
-    width: 1270px;
-  }
-
-  .profilePic {
-    margin: 210px 400px 0 0;
-  }
-
-  .openParagraph {
-    margin-top: 170px;
-    font-size: 30px;
-    padding: 12px 30px 25px 30px;
-    height: 250px;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .introContainer {
-    width: 1080px;
-  }
-
-  .profilePic {
-    margin: 210px 300px 0 30px;
-  }
-
-  .openParagraph {
-    font-size: 25px;
-    padding: 20px 30px 20px 30px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .introContainer {
-    width: 1024px;
-  }
-
-  .openParagraph {
-    margin-top: 176px;
-    font-size: 25px;
-    padding: 25px 30px 0px 30px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .introContainer {
-    width: 100%;
-  }
-
-  .wlcmBox {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .profilePic {
-    margin: 100px 0 0 0;
-  }
-
-  .openParagraph {
-    margin-top: 50px;
-    border-radius: 25px 25px 25px 25px;
-    padding: 0;
-    font-size: 22px;
-    width: 400px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .wlcmBox {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .profilePic {
-    margin: 100px 0 0 0;
-    width: 150px;
-    height: 150px;
-  }
-
-  .openParagraph {
-    margin-top: 50px;
-    border-radius: 25px 25px 25px 25px;
-    padding: 10px 5px 0 5px;
-    font-size: 17px;
-    width: 300px;
-    height: 170px;
-  }
 }
